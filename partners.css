@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding: 30px 0 35px 0;
+    color: white;
+    background-color: #C82F7C;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    margin-left: 30px;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: -2px;
+}
+
+
+.menu ul {
+    position: relative;
+    right: 5%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li a{
+    position: relative;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a::after {
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menu ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.partners-title {
+    margin-top: 2%;
+    font-size: 32px;
+    color: #C82F7C;
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    margin: 2% auto 2% auto;
+    border: solid #C82F7C 1px;
+    background-color: #C82F7C;
+}
+
+.partners-wrapper {
+    width: 60%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+}
+
+.partners-wrapper a {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.partners-wrapper a img {
+    width: 50%;
+}
+
+footer {
+    padding: 20px;
+    background-color: #C82F7C;
+    color: white;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.social-links {
+    margin-left: auto;
+    width: 30%;
+    grid-column: 1;
+}
+
+.social-links div a{;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.social-links div * {
+    margin: 2%;
+}
+
+.footer-wrapper * img {
+    height: 5vh;
+}
+
+.contact {
+    width: 50%;
+    grid-column: 2;
+}
+
+.contact div a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.contact div * {
+    margin: 2%;
+}
+
