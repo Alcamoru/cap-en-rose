@@ -3,6 +3,10 @@
     src: url("fonts/Roboto-Medium.ttf");
 }
 
+@media only screen and (max-width: 800px) {
+    
+}
+
 * {
     padding: 0;
     margin: 0;
